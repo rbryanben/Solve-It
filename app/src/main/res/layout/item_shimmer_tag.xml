@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        app:shimmer_auto_start="true">
+    <TextView
+        android:id="@+id/item_tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/background_lightblue_tag_white"
+        android:layout_marginLeft="1dp" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</RelativeLayout>

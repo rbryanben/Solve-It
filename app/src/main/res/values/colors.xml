@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="appTheme">#3A3A3A</color>
+    <color name="lightAppTheme">#B6B5B5</color>
+     <color name="lineSeparatorLightGray">#B9B9B9</color>
+    <color name="FinishButtonLightGreen">#64B361</color>
+    <color name="black">#000000</color>
+    <color name="ContinueButtonGreen">#2C8129</color>
+    <color name="hyperlinkBlue">#4B77FB</color>
+    <color name="orangeFinishButton">#AF833F</color>
+    <color name="ecocashBlue">#616CB3</color>
+    <color name="orange">#E17933</color>
+    <color name="notificationHighlight">#D3D3D3</color>
+</resources>

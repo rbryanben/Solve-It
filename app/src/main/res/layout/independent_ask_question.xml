@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--image -->
+    <ImageView
+        android:id="@+id/independent_reply_answer_image"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/technology_background" />
+
+    <!-- Set image button -->
+    <Button
+        android:id="@+id/independent_reply_set_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/background_lightblue_tag_white"
+        android:text="Set Image"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp" />
+
+    <ImageView
+        android:id="@+id/independent_reply_answer_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/independent_reply_answer_image"/>
+
+    <!--Reply text -->
+    <TextView
+        android:id="@+id/independent_question_answer_image_replytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:textColor="@color/appTheme"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/independent_reply_answer_back"/>
+
+    <!--text -->
+
+
+        <!--Reply text -->
+        <EditText
+            android:id="@+id/independent_reply_answer_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textCursorDrawable="@null"
+            android:layout_below="@id/independent_question_answer_image_replytext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_post_corner_gray_border"
+            android:gravity="start"
+            android:hint="Type here...."
+            android:imeOptions="actionDone"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tag"
+            android:textColor="@color/appTheme"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/independent_reply_answer_text"
+            android:textCursorDrawable="@null"/>
+
+        <!--Reply text subtext-->
+        <TextView
+            android:id="@+id/simple_tag_subtext_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add your tag"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/simple_tag_text" />
+
+        <EditText
+            android:id="@+id/independent_ask_question_tag_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textCursorDrawable="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@id/simple_tag_subtext_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/background_sign_up_buttons" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/independent_ask_question_tag"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/independent_ask_question_tag_input_text"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp" />
+
+    <!-- Submit button -->
+    <Button
+        android:layout_below="@+id/independent_ask_question_tag"
+        android:id="@+id/independent_reply_answer_submit"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="SUBMIT"
+        android:background="@drawable/background_orange_button_white"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

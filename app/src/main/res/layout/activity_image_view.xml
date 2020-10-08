@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/activity_image_view_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_below="@id/activity_image_view_back"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_image_view_image"
+        android:src="@drawable/blurred_image"
+        />
+
+</RelativeLayout>

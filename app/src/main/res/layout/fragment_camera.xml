@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <!--capture button -->
+    <TextureView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/fragment_camera_capture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_capture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="25dp"/>
+
+    <!--flash button -->
+    <ImageView
+        android:id="@+id/camera_flash"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignTop="@+id/fragment_camera_capture"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/fragment_camera_capture"
+        android:src="@drawable/ic_flash_off"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_camera_capture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_camera_capture"
+        app:layout_constraintTop_toTopOf="@+id/fragment_camera_capture" />
+
+    <Button
+        android:stateListAnimator="@null"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@color/appTheme"
+        android:text="HDR"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_camera_capture"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_camera_capture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_camera_capture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

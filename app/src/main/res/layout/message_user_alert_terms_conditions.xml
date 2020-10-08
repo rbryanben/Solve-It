@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/we_can_t_stress_this_enough_a_tc_isn_t_mandatory_but_you_should_treat_it_like_it_is_here_s_why_you_can_decide_which_country_s_laws_apply_to_govern_the_agreement_this_is_otherwise_known_as_choosing_the_jurisdiction_you_will_generally_choose_the_country_where_the_website_or_business_is_based_you_can_remove_or_delete_abusive_accounts_for_example_say_you_run_a_social_media_platform_and_explain_that_people_who_post_inflammatory_abusive_or_explicit_content_will_be_blocked_from_the_service_someone_posts_abusive_content_you_can_block_their_account_without_worry_because_you_can_rely_on_your_terms_and_conditions_agreement_you_can_limit_your_responsibility_you_can_include_disclaimer_clauses_in_your_agreement_that_say_you_re_not_liable_for_third_party_content_and_you_don_t_endorse_it_you_can_also_say_that_you_re_not_responsible_for_mistakes_and_typos_or_content_uploaded_by_users_which_other_users_may_find_offensive_you_can_manage_a_user_s_expectations_of_your_website_or_platform_when_the_terms_are_clear_users_know_what_they_can_and_cannot_expect_from_you_you_can_set_your_own_site_rules_and_the_consequences_for_violating_these_rules_within_legal_limits_you_can_t_contract_out_of_certain_rules_such_as_the_law_of_negligence_it_s_vital_that_you_protect_your_intellectual_property_rights_by_setting_out_what_your_rights_are_in_the_terms_and_conditions_agreement_you_can_take_action_against_users_who_infringe_your_rights_it_should_be_clear_that_the_logo_brand_and_content_belong_to_you_creating_a_terms_and_conditions_agreement_creating_a_terms_and_conditions_agreement_when_you_begin_to_draft_a_terms_and_conditions_agreement_there_are_certain_clauses_you_should_make_sure_to_include_let_s_look_at_each_of_these_clauses_in_turn_and_consider_how_they_are_drafted_introduction_clauses_it_s_very_helpful_to_set_out_a_clause_or_clauses_at_the_very_beginning_of_the_agreement_explaining_what_the_agreement_is_who_it_applies_to_and_when_the_terms_are_triggered_here_s_how_instagram_does_this_it_notes_that_the_terms_are_triggered_when_a_user_creates_an_account_on_the_platform_or_uses_the_app_and_it_clearly_states_that_the_terms_constitute_an_agreement_between_instagram_and_the_user_instagram_terms_of_use_intro_clause_it_s_important_to_clarify_who_the_agreement_applies_to_since_it_s_legally_binding_youtube_for_example_makes_it_clear_that_users_must_agree_to_the_terms_before_using_the_service_anyone_who_uses_their_service_is_assumed_to_agree_to_the_terms_some_people_are_legally_prohibited_from_entering_into_the_agreement_youtube_terms_of_service_accepting_the_terms_clause_this_clause_is_placed_close_to_the_beginning_of_the_agreement_and_is_part_of_the_introductory_clauses_who_can_use_your_platform_although_it_s_illegal_to_discriminate_against_people_based_on_protected_characteristics_such_as_their_gender_sexual_orientation_or_ethnicity_it_is_perfectly_reasonable_to_put_certain_restrictions_on_who_can_use_your_website_or_app_instagram_for_example_prohibits_children_under_the_age_of_13_from_creating_accounts_it_also_bans_convicted_sex_offenders_significantly_instagram_also_bans_users_from_returning_to_the_site_if_their_profile_is_deleted_or_blocked_the_clause_is_simple_but_effective_to_include_in_its_terms_instagram_terms_of_use_who_can_use_instagram_restrictions_clause_helpfully_instagram_establishes_why_the_restrictions_exist_they_want_to_comply_with_the_law_and_promote_a_safe_inclusive_platform_we_recommend_including_reasons_like_these_for_your_own_clauses_unacceptable_behavior_clause_these_clauses_address_what_behavior_is_unacceptable_on_your_website_they_are_an_opportunity_to_set_out_the_rules_that_you_expect_users_to_abide_by_and_what_the_consequences_will_be_if_the_user_violates_these_rules_it_s_helpful_to_set_out_specific_examples_of_behavior_that_violates_your_site_rules_the_oath_terms_of_service_sets_out_the_behavior_that_it_deems_unacceptable_it_uses_broad_language_such_as"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            />
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:text="CLOSE"
+                android:textColor="@color/white"
+                android:background="@drawable/background_update_orange"
+                android:id="@+id/closeTC"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

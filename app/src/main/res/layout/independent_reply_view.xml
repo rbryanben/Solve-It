@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- post picture -->
+        <ImageView
+            android:id="@+id/independent_reply_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/blurred_image"
+            android:scaleType="centerCrop"
+            />
+
+        <!-- post profileImage-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/independent_reply_profileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/sample_profile"/>
+
+        <!-- unsolved -->
+
+        <!-- answer -->
+
+        <!-- answer -->
+        <TextView
+            android:id="@+id/independent_post_questionText_nouse"
+            android:layout_below="@id/independent_post_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reply"
+            android:textColor="@color/appTheme"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- answer -->
+        <TextView
+            android:id="@+id/independent_reply_replyText"
+            android:layout_below="@id/independent_post_questionText_nouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here we will put the text of the reply"
+            android:textColor="@color/appTheme"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- separator -->
+        <RelativeLayout
+            android:id="@+id/independent_post_second_separator"
+            android:layout_below="@id/independent_reply_replyText"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightAppTheme" />
+
+        <!-- answer -->
+        <TextView
+            android:id="@+id/independent_reply_respondersText"
+            android:layout_below="@id/independent_post_second_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 PEOPLE RESPONDED"
+            android:alpha="0.8"
+            android:textColor="@color/appTheme"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- replies grid -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/independent_reply_view_replies_grid"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/independent_reply_respondersText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="15dp" />
+
+
+
+
+        <!-- back button-->
+        <ImageView
+            android:layout_below="@+id/independent_reply_image"
+            android:id="@+id/independent_post_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:elevation="5dp"
+            android:src="@drawable/ic_back"/>
+
+        <!-- answer -->
+        <Button
+            android:id="@+id/independent_reply_view_replyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="REPLY"
+            android:textColor="@color/white"
+            android:background="@drawable/background_gray_button_white"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="260dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Basic Header and sub head -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONATE"
+        android:textColor="@color/appTheme"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/independent_profile_view_informationAboutText"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/independent_profile_view_informationAboutText"
+        android:text="thank you for you donation"
+        android:textColor="@color/appTheme"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="@+id/independent_profile_view_informationAboutText"
+        app:layout_constraintTop_toBottomOf="@+id/independent_profile_view_informationAboutText" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_post_corner_gray_border"
+        android:hint="$ZWL AMOUNT"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/independent_profile_view_informationAboutText"
+        android:text="Donate with Eco-cash"
+        android:textColor="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/independent_profile_view_informationAboutText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/payment_ecocash_five"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_blue_button_white"
+        android:stateListAnimator="@null"
+        android:text="DONATE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <!-- one wallet-->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/independent_profile_view_informationAboutText"
+        android:text="Donate with One-money"
+        android:textColor="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/independent_profile_view_informationAboutText"
+        app:layout_constraintTop_toBottomOf="@+id/payment_ecocash_five" />
+
+    <Button
+        android:id="@+id/payment_one_wallet_five"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_orange_button_white"
+        android:stateListAnimator="@null"
+        android:text="DONATE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <!-- Paynow-->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/independent_profile_view_informationAboutText"
+        android:text="or use"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/independent_profile_view_informationAboutText"
+        app:layout_constraintTop_toBottomOf="@+id/payment_one_wallet_five" />
+
+    <ImageView
+        android:id="@+id/paynow_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stateListAnimator="@null"
+        android:text="ZWL $5,00"
+        android:src="@drawable/button_pay_now_medium"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+
+    <ImageView
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_undraw_os_upgrade_njm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

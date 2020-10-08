@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--image -->
+    <ImageView
+        android:id="@+id/independent_question_answer_image"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/technology_background" />
+
+    <!-- Set image button -->
+    <Button
+        android:id="@+id/independent_question_set_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/background_lightblue_tag_white"
+        android:text="Set Image"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp" />
+
+    <ImageView
+        android:id="@+id/independent_question_answer_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/independent_question_answer_image"/>
+
+    <!--Reply text -->
+    <TextView
+        android:id="@+id/independent_question_answer_image_replytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:textColor="@color/appTheme"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/independent_question_answer_back"/>
+
+    <!--text -->
+    <EditText
+        android:id="@+id/independent_question_answer_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:hint="Type here...."
+        android:gravity="start"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/background_post_corner_gray_border"
+        android:layout_below="@id/independent_question_answer_image_replytext"/>
+
+    <!-- Submit button -->
+    <Button
+        android:id="@+id/independent_question_answer_submit"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="SUBMIT"
+        android:background="@drawable/background_orange_button_white"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+
+</RelativeLayout>

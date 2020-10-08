@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <!--Tags Text -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAGS"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/appTheme"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--tags follow up text -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="select at least 3 tags to follow"
+        android:textColor="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ProgressBar
+        android:id="@+id/activity_signup_page03_progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:theme="@style/ProgressBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_signup_page03_itemsLayout"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <GridView
+            android:id="@+id/activity_signup_page03_tagsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:verticalSpacing="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/activity_signup_page03_addTagEdit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_sign_up_buttons"
+            android:hint="Search"
+            android:textCursorDrawable="@null"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_signup_page03_tagsGrid" />
+
+        <!--Tags added Text -->
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="SELECTED TAGS"
+            android:textColor="@color/appTheme"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/activity_signup_page03_addTagEdit"
+            app:layout_constraintTop_toBottomOf="@+id/activity_signup_page03_addTagEdit" />
+
+        <!--tags remove text -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="184dp"
+            android:layout_height="19dp"
+            android:text="hold tag to remove"
+            android:textColor="@color/appTheme"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <!--tags remove text -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_signup_page03_selectedTagsGrid"
+            android:verticalSpacing="1dp"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/activity_signup_page03_proceedText"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:background="@drawable/background_update_orange"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="proceed"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/activity_signup_page03_selectedTagsGrid" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

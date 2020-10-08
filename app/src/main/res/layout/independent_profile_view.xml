@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp">
+
+
+
+    <!--activity body -->
+    <RelativeLayout
+        android:id="@+id/independent_profile_view_activityBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!--image view -->
+        <ImageView
+            android:id="@+id/independent_profile_view_backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/blurred_image"
+            android:scaleType="centerCrop"/>
+
+        <!--profile image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/independent_profile_view_profilePicture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sample_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="5dp"/>
+
+        <!--username text-->
+        <TextView
+            android:id="@+id/independent_profile_view_usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appTheme"
+            android:text="rbryanben"
+            android:layout_below="@id/independent_profile_view_profilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/independent_post_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/independent_profile_view_usernameText"
+            android:background="@drawable/background_post_corner_gray_border"
+            android:orientation="vertical">
+
+
+            <!--Basic Header and sub head -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BASIC"
+                android:textSize="16sp"
+                android:textColor="@color/appTheme"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/independent_profile_view_informationAboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="information about individual"
+                android:textSize="12sp"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- basic name -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Name            -     Ryan"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- basic surname -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surname       -     Ben"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="3.7dp"/>
+
+            <!-- basic age -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age                -     20"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="3.6dp"/>
+
+            <!-- basic education -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edu                -     Higher-education"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="4dp"/>
+
+            <!-- Tags education -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags                  "
+                android:maxLines="1"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/independent_post_basic"
+            android:background="@drawable/background_post_corner_gray_border"
+            android:orientation="vertical">
+
+
+            <!--Meta Header and sub head -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="META"
+                android:textSize="16sp"
+                android:textColor="@color/appTheme"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/independent_profile_view_informationMetaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="see how person has contributed"
+                android:textSize="12sp"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- meta impact -->
+            <TextView
+                android:id="@+id/independent_profile_view_meta_impact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Impact          -     "
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- meta votes -->
+            <TextView
+                android:id="@+id/independent_profile_view_meta_votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votes            -     "
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="4dp"/>
+
+            <!-- basic age -->
+            <TextView
+                android:id="@+id/independent_profile_view_meta_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answers       -     "
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="3.6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- back button-->
+    <ImageView
+        android:id="@+id/independent_profile_view_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_back"/>
+
+</RelativeLayout>

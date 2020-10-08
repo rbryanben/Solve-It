@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+   <!--- top part-->
+    <RelativeLayout
+        android:id="@+id/activity_main_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <!-- ViewPager -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/activity_main_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <!--- top part-->
+    <RelativeLayout
+        android:id="@+id/activity_main_bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:elevation="5dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/activity_main_bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="59dp"
+            app:showAsAction="always"
+            android:foregroundGravity="center"
+            app:menu="@menu/bottom_navigation_menu"
+            android:background="@color/white"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="35dp"
+            app:itemIconTint="@color/bottom_navigation_color"
+            app:itemTextColor="@color/bottom_navigation_color"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

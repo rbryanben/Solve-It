@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_gravity="center">
+
+    <!-- icon -->
+    <ImageView
+        android:focusable="false"
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher_foreground_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Signup Text -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="@color/appTheme"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_signup_page00_usernameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <!--be part of our community text -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="be part of our community"
+        android:textColor="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/activity_signup_page00_usernameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <!--- username text box-->
+    <EditText
+        android:id="@+id/activity_signup_page00_usernameEdit"
+        android:textSize="14sp"
+        android:inputType="textVisiblePassword"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_sign_up_buttons"
+        android:hint="username"
+        android:textCursorDrawable="@null"
+        android:maxLines="1"
+        android:paddingLeft="25dp"
+        android:textColorHint="#5E5E5E"
+        android:textColor="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/activity_signup_page00_usernameCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="250dp"
+        android:src="@drawable/ic_wrong"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_signup_page00_usernameEdit"
+        app:layout_constraintStart_toStartOf="@+id/activity_signup_page00_usernameEdit"
+        app:layout_constraintTop_toTopOf="@+id/activity_signup_page00_usernameEdit" />
+
+    <TextView
+        android:id="@+id/activity_signup_page00_usernameErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username exists"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_signup_page00_usernameEdit"
+        app:layout_constraintEnd_toEndOf="@+id/activity_signup_page00_usernameEdit" />
+
+    <!--- email text box-->
+    <EditText
+        android:id="@+id/activity_signup_page00_emailEdit"
+        android:textSize="14sp"
+        android:textColor="#5E5E5E"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/background_sign_up_buttons"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="25dp"
+        android:textColorHint="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signup_page00_usernameEdit" />
+
+    <ImageView
+        android:id="@+id/activity_signup_page00_emailCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_wrong"
+        android:layout_marginLeft="250dp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_signup_page00_emailEdit"
+        app:layout_constraintStart_toStartOf="@+id/activity_signup_page00_emailEdit"
+        app:layout_constraintTop_toTopOf="@+id/activity_signup_page00_emailEdit" />
+
+    <TextView
+        android:id="@+id/activity_signup_page00_emailErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email exists"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_signup_page00_emailEdit"
+        app:layout_constraintEnd_toEndOf="@+id/activity_signup_page00_emailEdit" />
+
+    <!--- password text box-->
+    <EditText
+        android:id="@+id/activity_signup_page00_passwordEdit"
+        android:textSize="14sp"
+        android:layout_width="280dp"
+        android:textColor="#5E5E5E"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/background_sign_up_buttons"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="25dp"
+        android:textColorHint="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signup_page00_emailEdit" />
+
+    <ImageView
+        android:id="@+id/activity_signup_page00_passwordCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_correct"
+        android:layout_marginLeft="250dp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_signup_page00_passwordEdit"
+        app:layout_constraintStart_toStartOf="@+id/activity_signup_page00_passwordEdit"
+        app:layout_constraintTop_toTopOf="@+id/activity_signup_page00_passwordEdit" />
+
+    <!--- confirm password text box-->
+    <EditText
+        android:id="@+id/activity_signup_page00_confirmPasswordEdit"
+        android:textSize="14sp"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_sign_up_buttons"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="25dp"
+        android:textColor="#5E5E5E"
+        android:textColorHint="#5E5E5E"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signup_page00_passwordEdit" />
+
+    <TextView
+        android:id="@+id/activity_signup_page00_passwordErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password too short"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_signup_page00_passwordEdit"
+        app:layout_constraintEnd_toEndOf="@+id/activity_signup_page00_passwordEdit" />
+
+    <ImageView
+        android:id="@+id/activity_signup_page00_passwordConfirmCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_correct"
+        android:layout_marginLeft="250dp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_signup_page00_confirmPasswordEdit"
+        app:layout_constraintStart_toStartOf="@+id/activity_signup_page00_confirmPasswordEdit"
+        app:layout_constraintTop_toTopOf="@+id/activity_signup_page00_confirmPasswordEdit" />
+
+    <TextView
+        android:id="@+id/activity_signup_page00_alreadyHaveAccountLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="false"
+        android:layout_marginTop="30dp"
+        android:text="already have an account?"
+        android:textColor="@color/hyperlinkBlue"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signup_page00_confirmPasswordEdit" />
+
+    <TextView
+        android:id="@+id/activity_signup_page00_confirmPasswordErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passwords do not match"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_signup_page00_confirmPasswordEdit"
+        app:layout_constraintEnd_toEndOf="@+id/activity_signup_page00_confirmPasswordEdit" />
+
+    <!-- continue button -->
+    <Button
+        android:id="@+id/activity_signup_page00_finishButton"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_green_button_white"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:stateListAnimator="@null"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signup_page00_alreadyHaveAccountLink" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

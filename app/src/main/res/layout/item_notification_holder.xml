@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <!-- header text -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replied to your question"
+        android:textColor="@color/appTheme"
+        android:textSize="16sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/notification_back"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        />
+
+    <!--notification text preview -->
+    <TextView
+        android:id="@+id/previewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appTheme"
+        android:text="There voltages is clearly 5.432V, you should intgare the distance from the Nand to the AND"
+        android:layout_below="@id/headerText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- profile image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sample_profile"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <!--separator -->
+    <RelativeLayout
+        android:alpha="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightAppTheme"
+        android:layout_below="@id/previewText"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

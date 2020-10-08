@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/activity_illustration_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/activity_illustration_switcher">
+
+        <RelativeLayout
+            android:id="@+id/activity_illustration_item0"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/shape_circle_checked" />
+
+        <RelativeLayout
+            android:id="@+id/activity_illustration_item1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/activity_illustration_item0"
+            android:background="@drawable/shape_circle_unchecked" />
+
+        <RelativeLayout
+            android:id="@+id/activity_illustration_item2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/activity_illustration_item1"
+            android:background="@drawable/shape_circle_unchecked" />
+
+        <RelativeLayout
+            android:id="@+id/activity_illustration_item3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/activity_illustration_item2"
+            android:background="@drawable/shape_circle_unchecked" />
+
+        <RelativeLayout
+            android:id="@+id/activity_illustration_item4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/activity_illustration_item3"
+            android:background="@drawable/shape_circle_unchecked" />
+
+    </RelativeLayout>
+</RelativeLayout>

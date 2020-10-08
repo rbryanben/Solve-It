@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:srcCompat="@drawable/ic_congrats" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:text="OUR GIFT TO YOU"
+        android:textColor="@color/appTheme"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="190dp"
+        android:gravity="center"
+        android:text="To show our appreciation for you joining,we have\ntopped up your account to get you\n started"
+        android:textColor="@color/appTheme"
+        />
+
+    <Button
+        android:id="@+id/fragment_illustration05_finish_button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="ZWL $1,54"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:background="@drawable/background_green_button_white"/>
+
+    <TextView
+        android:id="@+id/activity_signup_page04_finish"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="go to home"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>

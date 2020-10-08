@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wapazock.solveit">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".utils.globalShared"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash.splashScreen"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mainActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".settings.changePassword"/>
+        <activity android:name=".settings.changeTags"/>
+        <activity android:name=".illustrations.illustrationsActivity"/>
+        <activity android:name=".signup.signupActivity00"/>
+        <activity android:name=".signup.signupActivity01"/>
+        <activity android:name=".signup.signupActivity02"/>
+        <activity android:name=".signup.signupActivity03"/>
+        <activity android:name=".signin.signInActivity"/>
+        <activity android:name=".signin.signInActivityRecoverPassword"/>
+        <activity android:name=".signup.signupActivity04"/>
+        <activity android:name=".independent_answer.activity_answer"/>
+        <activity android:name=".independent_profile_view.activity_profile_view"/>
+        <activity android:name=".independent_post_view.activity_post"/>
+        <activity android:name=".independent_imageView.activity_image_view"/>
+        <activity android:name=".independent_gallery.activity_gallery"/>
+        <activity android:name=".independent_reply_viewer.activity_reply_viewer"/>
+        <activity android:name=".independent_reply_reply.activity_reply_reply"/>
+        <activity android:name=".payments.five_dollars"/>
+        <activity android:name=".payments.payment"/>
+        <activity android:name=".independent_ask_question.independent_ask_question"/>
+
+
+
+        <receiver android:name=".smeReceiver.ReceiveSms">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

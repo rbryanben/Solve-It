@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1068620280509",
+    "firebase_url": "https://solve-it-d0a3f.firebaseio.com",
+    "project_id": "solve-it-d0a3f",
+    "storage_bucket": "solve-it-d0a3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068620280509:android:d5a4ca8bf0ad6825adbdd4",
+        "android_client_info": {
+          "package_name": "com.wapazock.solveit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068620280509-j169b9lq0vkprghu57l95ueie96q7d5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj-8iw-mh5vcliE__yAeTkxjP6y618Vcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068620280509-j169b9lq0vkprghu57l95ueie96q7d5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

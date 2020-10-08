@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <!-- post picture -->
+        <ImageView
+            android:id="@+id/independent_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blurred_image" />
+
+        <!-- post profileImage-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/independent_post_profileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/sample_profile" />
+
+        <!-- unsolved -->
+        <Button
+            android:id="@+id/independent_reply_solvedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="260dp"
+            android:background="@drawable/background_orange_button_white"
+            android:text="UNSOLVED"
+            android:textColor="@color/white" />
+
+        <!-- answer -->
+        <Button
+            android:id="@+id/independent_reply_image_answerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="260dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_gray_button_white"
+            android:text="ANSWER"
+            android:textColor="@color/white" />
+
+        <!-- answer -->
+        <TextView
+            android:id="@+id/independent_post_questionText_nouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/independent_post_back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Question"
+            android:textColor="@color/appTheme" />
+
+        <!-- answer -->
+        <TextView
+            android:id="@+id/independent_post_questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/independent_post_questionText_nouse"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="What is the voltage across the Nand gat on the above curircuit,  but this tis a bunch of tex t added to be a dummy towards this question"
+            android:textColor="@color/appTheme" />
+
+        <!-- separator -->
+        <RelativeLayout
+            android:id="@+id/independent_post_second_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/independent_post_questionText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/lightAppTheme" />
+
+        <!-- answer -->
+        <TextView
+            android:id="@+id/independent_post_respondersText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/independent_post_second_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.8"
+            android:text="2 PEOPLE RESPONDED"
+            android:textColor="@color/appTheme" />
+
+        <!-- replies grid -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/independent_reply_replies_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/independent_post_respondersText"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:verticalSpacing="15dp" />
+
+
+        <!-- back button-->
+        <ImageView
+            android:id="@+id/independent_post_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/independent_post_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:elevation="5dp"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- icon -->
+    <ImageView
+        android:focusable="false"
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher_foreground_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Signup Text -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="@color/appTheme"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <!--be part of our community text -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="with your email address"
+        android:textColor="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/activity_signin_emailEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <!--- username text box-->
+    <EditText
+        android:id="@+id/activity_signin_emailEdit"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:focusable="false"
+        android:background="@drawable/background_sign_up_buttons"
+        android:hint="email"
+        android:textCursorDrawable="@null"
+        android:maxLines="1"
+        android:paddingLeft="25dp"
+        android:textColorHint="#5E5E5E"
+        android:textColor="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <!--- password text box-->
+    <EditText
+        android:id="@+id/activity_signin_passwordEdit"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_sign_up_buttons"
+        android:hint="password"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="25dp"
+        android:imeOptions="actionDone"
+        android:textColor="#5E5E5E"
+        android:textColorHint="#5E5E5E"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signin_emailEdit" />
+
+
+    <!-- continue button -->
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/activity_signing_signButton"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_green_button_white"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signin_passwordEdit" />
+
+
+    <!-- signup password -->
+    <Button
+        android:id="@+id/activity_signin_signUpButton"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_gray_button_white"
+        android:text="sign up"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signing_signButton" />
+
+    <!-- forgot password -->
+    <TextView
+        android:id="@+id/activity_signin_recoveryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgot your your password ?"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/hyperlinkBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_signin_signUpButton" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

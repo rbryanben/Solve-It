@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!--Signup Text -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Verification"
+        android:textColor="@color/appTheme"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/message_verification_code"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--be part of our community text -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="we need to verify your mobile number\nbefore we sign you up \n"
+        android:textColor="@color/appTheme"
+        app:layout_constraintStart_toStartOf="@+id/message_verification_code"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <!--- verification text box-->
+    <EditText
+        android:id="@+id/message_verification_code"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/background_sign_up_buttons"
+        android:hint="Verification code"
+        android:textCursorDrawable="@null"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textColorHint="#5E5E5E"
+        android:textColor="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/activity_signup_page02_verificationImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="250dp"
+        android:src="@drawable/ic_wrong"
+        app:layout_constraintBottom_toBottomOf="@+id/message_verification_code"
+        app:layout_constraintStart_toStartOf="@+id/message_verification_code"
+        app:layout_constraintTop_toTopOf="@+id/message_verification_code" />
+
+    <TextView
+        android:id="@+id/activity_signup_page02_verificationErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We will try to automatically detect code"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/message_verification_code"
+        app:layout_constraintEnd_toEndOf="@+id/message_verification_code" />
+
+
+
+    <Button
+        android:id="@+id/message_verification_sendButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_orange_button_white"
+        android:stateListAnimator="@null"
+        android:text="SEND CODE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_verification_code" />
+
+
+    <Button
+        android:id="@+id/message_verification_confirmButton"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_gray_button_white"
+        android:stateListAnimator="@null"
+        android:text="VERIFY"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_verification_sendButton" />
+
+    <Button
+        android:id="@+id/message_verification_cancelButton"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_gray_button_white"
+        android:stateListAnimator="@null"
+        android:text="CANCEL"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_verification_confirmButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

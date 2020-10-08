@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Search Bar -->
+    <RelativeLayout
+        android:id="@+id/fragment_homelayout0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+
+    <EditText
+        android:id="@+id/fragment_home_searchBoxEdit"
+        android:imeOptions="actionSearch"
+        android:textCursorDrawable="@null"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search for a question"
+        android:inputType="text"
+        android:maxLines="1"
+        android:focusableInTouchMode="false"
+        android:paddingLeft="50dp"
+        android:focusable="false"
+        android:textSize="14sp"
+        android:background="@drawable/background_light_gray_searchbox"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_search"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_home_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fragment_homelayout0"
+        android:background="@color/white">
+
+    <!-- Tags Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_home_tagsRecycler"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+    <!-- spinner -->
+    <Spinner
+        android:id="@+id/fragment_home_sortSpinner"
+        android:layout_below="@id/fragment_home_tagsRecycler"
+        android:layout_marginTop="8dp"
+        android:layout_width="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/sort_items"
+        android:paddingLeft="0dp"/>
+
+    <!-- Content grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbars="none"
+        android:id="@+id/fragment_home_contentGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/fragment_home_sortSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="-4dp"
+        android:background="@color/white">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <!-- no results found -->
+    <TextView
+        android:id="@+id/fragment_home_searchNoResults"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no results found"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

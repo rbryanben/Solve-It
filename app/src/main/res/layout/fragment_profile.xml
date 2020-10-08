@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <!--activity body -->
+    <RelativeLayout
+        android:id="@+id/independent_profile_view_activityBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="40dp"
+        >
+
+        <!-- cover image -->
+        <ImageView
+            android:id="@+id/fragment_profile_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/blurred_image"
+            android:scaleType="centerCrop"/>
+
+        <!--profile image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_profile_profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/blurred_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="5dp"/>
+
+        <!-- ask question button -->
+
+
+        <!--username text-->
+
+        <Button
+            android:id="@+id/fragment_profile_ask_question"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fragment_profile_cover_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toEndOf="@+id/independent_profile_view_usernameText"
+            android:text="ASK QUESTION"
+            android:background="@drawable/background_orange_button_white"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/independent_profile_view_usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appTheme"
+            android:text=""
+            android:layout_below="@+id/fragment_profile_profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <!--basic -->
+        <LinearLayout
+            android:id="@+id/independent_post_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/independent_profile_view_usernameText"
+            android:background="@drawable/background_post_corner_gray_border"
+            android:orientation="vertical">
+
+
+            <!--Basic Header and sub head -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BASIC"
+                android:textSize="16sp"
+                android:textColor="@color/appTheme"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/independent_profile_view_informationAboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="information about individual"
+                android:textSize="12sp"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- basic name -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Name            -     Ryan"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- basic surname -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surname       -     Ben"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="3.7dp"/>
+
+            <!-- basic age -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age                -     20"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="3.6dp"/>
+
+            <!-- basic education -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edu                -     Higher-education"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="4dp"/>
+
+            <!-- Tags education -->
+            <TextView
+                android:id="@+id/independent_profile_view_basic_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags              -     "
+                android:maxLines="1"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+
+        <!-- meta -->
+        <LinearLayout
+            android:id="@+id/fragment_profile_meta_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/independent_post_basic"
+            android:background="@drawable/background_post_corner_gray_border"
+            android:orientation="vertical">
+
+
+            <!--Meta Header and sub head -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="META"
+                android:textSize="16sp"
+                android:textColor="@color/appTheme"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/independent_profile_view_informationMetaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="see how person has contributed"
+                android:textSize="12sp"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- meta impact -->
+            <TextView
+                android:id="@+id/independent_profile_view_meta_impact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Impact          -     "
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+            <!-- meta votes -->
+            <TextView
+                android:id="@+id/independent_profile_view_meta_votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votes            -     "
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="4dp"/>
+
+            <!-- basic age -->
+            <TextView
+                android:id="@+id/independent_profile_view_meta_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answers       -     "
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="3.6dp"/>
+        </LinearLayout>
+
+
+        <!-- credit -->
+        <RelativeLayout
+            android:id="@+id/fragment_profile_credit_layout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/fragment_profile_meta_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:background="@drawable/background_post_corner_gray_border">
+
+
+            <!--Meta Header and sub head -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/fragment_profile_meta_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREDIT"
+                android:textSize="16sp"
+                android:textColor="@color/appTheme"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/fragment_profile_meta_sub_heat"
+                android:layout_below="@id/fragment_profile_meta_head"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="amount collect"
+                android:textSize="12sp"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+
+            <Button
+                android:id="@+id/fragment_profile_pending_amount"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background_green_button_white"
+                android:stateListAnimator="@null"
+                android:text="ZWL $1,01"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_signup_page01_termsAndConditionEdit" />
+
+            <Button
+                android:id="@+id/fragment_profile_request_payment"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/fragment_profile_pending_amount"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background_orange_orange_button_white"
+                android:stateListAnimator="@null"
+                android:text="REQUEST PAYMENT"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_signup_page01_termsAndConditionEdit" />
+
+        </RelativeLayout>
+
+        <!-- donate -->
+        <RelativeLayout
+            android:id="@+id/fragment_profile_donate_layout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/fragment_profile_credit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:background="@drawable/background_post_corner_gray_border">
+
+
+            <!--Meta Header and sub head -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/fragment_profile_donate_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DONATE"
+                android:textSize="16sp"
+                android:textColor="@color/appTheme"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/fragment_profile_donate_sub_heat"
+                android:layout_below="@id/fragment_profile_donate_head"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="help us pay the people who solve our questions"
+                android:textSize="12sp"
+                android:textColor="@color/appTheme"
+                android:layout_marginLeft="5dp"/>
+
+
+            <Button
+                android:id="@+id/fragment_profile_donate_button"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/fragment_profile_donate_sub_heat"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_dark_orange_button_white"
+                android:stateListAnimator="@null"
+                android:text="ZWL $5,00"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_signup_page01_termsAndConditionEdit" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/fragment_profile_donate_more_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_profile_donate_button"
+                android:text="donate more"
+                android:textSize="16sp"
+                android:textColor="@color/orangeFinishButton"
+                android:layout_marginLeft="5dp"/>
+
+
+
+        </RelativeLayout>
+
+        <!-- shimmer layers -->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            app:shimmer_auto_start="true"
+            android:clipChildren="true"
+            app:shimmer_colored="true"
+            app:shimmer_duration="2000"
+            android:layout_height="350dp"
+            android:id="@+id/fragment_profile_cover_image_shimmer">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- cover image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/blurred_image"
+                    android:scaleType="centerCrop"/>
+
+                <!--profile image -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/blurred_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="260dp"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="5dp"/>
+
+
+
+
+            </RelativeLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
